@@ -1,0 +1,8 @@
+node_modules/
+tasks/
+*.lock
+.env
+.env.*
+.test-runs/
+*.log
+.DS_Store

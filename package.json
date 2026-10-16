@@ -1,0 +1,32 @@
+{
+  "name": "resolvesignal-agent-starter",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "type": "module",
+  "description": "Runnable ResolveSignal pay-per-call starter for an existing Circle Agent Wallet",
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "demo": "node starter.mjs demo",
+    "doctor": "node starter.mjs doctor",
+    "init": "node starter.mjs init",
+    "call": "node starter.mjs call",
+    "recover": "node starter.mjs recover",
+    "test": "node --test test/*.test.mjs",
+    "test:sdk": "vitest run test/sdk"
+  },
+  "dependencies": {
+    "@agent-commitments/sdk": "file:vendor/agent-commitments-sdk",
+    "viem": "2.57.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duclucky/resolvesignal-agent-starter.git"
+  },
+  "homepage": "https://github.com/duclucky/resolvesignal-agent-starter#readme",
+  "devDependencies": {
+    "vitest": "5.0.3"
+  }
+}

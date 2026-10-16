@@ -1,0 +1,38 @@
+{
+  "name": "@agent-commitments/sdk",
+  "version": "0.1.0-alpha.2",
+  "description": "Shared USDC budgets, signed commitments and recovery primitives for Arc builders",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./resolvesignal-node-store": {
+      "types": "./dist/resolvesignal-node-store.d.ts",
+      "import": "./dist/resolvesignal-node-store.js"
+    },
+    "./resolvesignal-node": {
+      "types": "./dist/resolvesignal-node.d.ts",
+      "import": "./dist/resolvesignal-node.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "viem": "2.57.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duclucky/agent-commitments.git",
+    "directory": "packages/sdk"
+  }
+}
